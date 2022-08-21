@@ -1,0 +1,45 @@
+/* Import Open Sans font */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+/* Top NavBar */
+nav#main-nav {
+    background-color: #fff;
+    height: 4em;
+    width: 100%;
+    position: fixed;
+    padding: 0;
+    /* shadow */
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+ul#nav-ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+li.main-nav-items {
+    padding: 0 .8em;
+    display: inline;
+}
+li#logo-nav {
+    padding: 0 .8em;
+    display: inline;
+}
+a.nav-links {
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+}
+img.imgs-nav {
+    height: 2.2em;
+    width: auto;
+    display: flex;
+}
