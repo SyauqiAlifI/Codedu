@@ -68,7 +68,7 @@ li.main-nav-items > a {
     font-weight: 700;
     opacity: .5;
     transition: all .1s ease-in-out;
-    width: max-content;
+    width: 74px;
 }
 li.main-nav-items:nth-child(2)::after {
     content: "";
