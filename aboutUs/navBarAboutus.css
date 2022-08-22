@@ -1,0 +1,111 @@
+/* Import Open Sans font */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,500,600,700,800);
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+body {
+    background: #fafafa;
+}
+
+/* Top NavBar */
+nav#main-nav {
+    background-color: #fff;
+    height: fit-content;
+    width: 80%;
+    position: fixed;
+    padding: 1% 10%;
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
+    z-index: 999;
+}
+div#div-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+ul#nav-ul {
+    display: flex;
+    list-style: none;
+    max-height: 100%;
+}
+li.main-nav-items {
+    padding: 0 .8em;
+    max-height: fit-content;
+}
+li.main-nav-items::after {
+    content: "";
+    display: block;
+    width: 1em;
+    height: 2px;
+    background: transparent;
+    position: absolute;
+    transform: translate(150%, -200%);
+    transition: all .2s ease-in-out;
+    border-radius: 50%;
+}
+li.main-nav-items:hover::after {
+    content: "";
+    display: block;
+    width: 1em;
+    height: 2px;
+    background: black;
+    position: absolute;
+    transform: translate(150%, 100%);
+    transition: all .2s ease-in-out;
+    border-radius: 50%;
+}
+li.main-nav-items:hover > a {
+    color: #112D4E;
+    opacity: 1;
+    transition: all .1s ease-in-out;
+}
+li.main-nav-items > a {
+    color: #112D4E;
+    text-decoration: none;
+    font-weight: 700;
+    opacity: .5;
+    transition: all .1s ease-in-out;
+    width: max-content;
+}
+li.main-nav-items:nth-child(3)::after {
+    content: "";
+    display: block;
+    width: 1em;
+    height: 2px;
+    background: black;
+    position: absolute;
+    transform: translate(150%, 100%);
+    border-radius: 50%;
+}
+li.main-nav-items:nth-child(3) > a {
+    color: #112D4E;
+    opacity: 1;
+}
+li#logo-nav {
+    padding: 0 .8em;
+}
+img.imgs-nav {
+    height: 2.2em;
+    margin: 0;
+    display: flex;
+}
+img#profile-img::after {
+    /* Add a dropdown symbol */
+    content: "\f0d7";
+    font-family: font-awesome;
+    width: 1em;
+    height: 1em;
+    position: absolute;
+}
+
+/* Main Container */
+#container {
+    width: 80%;
+    height: fit-content;
+    padding-top: 100px;
+    padding-bottom: 48px;
+    margin: auto;
+}
