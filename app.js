@@ -21,7 +21,7 @@ const server = http.createServer((req, res) => {
     const url = req.url;
 
     switch (url) {
-        case '/' || '/home':
+        case '/' || '/home' || '/Codedu/home':
             renderHTML('./home.html', res);
             break;
         case '/Codedu/courses':
