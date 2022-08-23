@@ -34,6 +34,8 @@ ul#nav-ul {
 li.main-nav-items {
     padding: 0 .8em;
     max-height: fit-content;
+    width: 76px;
+    text-align: right;
 }
 li.main-nav-items::after {
     content: "";
@@ -42,9 +44,9 @@ li.main-nav-items::after {
     height: 2px;
     background: transparent;
     position: absolute;
-    transform: translate(150%, -200%);
+    transform: translate(220%, -200%);
     transition: all .2s ease-in-out;
-    border-radius: 50%;
+    border-radius: 5%;
 }
 li.main-nav-items:hover::after {
     content: "";
@@ -53,10 +55,34 @@ li.main-nav-items:hover::after {
     height: 2px;
     background: black;
     position: absolute;
-    transform: translate(150%, 100%);
+    transform: translate(220%, 100%);
     transition: all .2s ease-in-out;
-    border-radius: 50%;
+    border-radius: 5%;
 }
+/* Specialized for home text */
+li.main-nav-items:nth-child(1)::after {
+    content: "";
+    display: block;
+    width: 1em;
+    height: 2px;
+    background: transparent;
+    position: absolute;
+    transform: translate(280%, -200%);
+    transition: all .2s ease-in-out;
+    border-radius: 5%;
+}
+li.main-nav-items:nth-child(1):hover::after {
+    content: "";
+    display: block;
+    width: 1em;
+    height: 2px;
+    background: black;
+    position: absolute;
+    transform: translate(280%, 100%);
+    transition: all .2s ease-in-out;
+    border-radius: 5%;
+}
+/* Done Home text */
 li.main-nav-items:hover > a {
     color: #112D4E;
     opacity: 1;
@@ -68,7 +94,6 @@ li.main-nav-items > a {
     font-weight: 700;
     opacity: .5;
     transition: all .1s ease-in-out;
-    width: 74px;
 }
 li.main-nav-items:nth-child(2)::after {
     content: "";
@@ -77,12 +102,19 @@ li.main-nav-items:nth-child(2)::after {
     height: 2px;
     background: black;
     position: absolute;
-    transform: translate(150%, 100%);
-    border-radius: 50%;
+    transform: translate(220%, 100%);
+    border-radius: 5%;
 }
 li.main-nav-items:nth-child(2) > a {
     color: #112D4E;
     opacity: 1;
+}
+a.nav-links {
+    color: #112D4E;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
 }
 li#logo-nav {
     padding: 0 .8em;
@@ -92,13 +124,26 @@ img.imgs-nav {
     margin: 0;
     display: flex;
 }
-img#profile-img::after {
-    /* Add a dropdown symbol */
-    content: "\f0d7";
-    font-family: font-awesome;
-    width: 1em;
-    height: 1em;
-    position: absolute;
+img#profile-img {
+    display: inline-block;
+}
+.fa-chevron-down::before {
+    display: inline-block;
+    margin-left: .2em;
+    text-decoration: none;
+    color: black !important;
+    font-size: .9em;
+    transform: rotate(0deg);
+    transition: all .2s ease-in-out;
+}
+.fa-chevron-down:hover::before {
+    display: inline-block;
+    margin-left: .2em;
+    text-decoration: none;
+    color: black !important;
+    font-size: .9em;
+    transform: rotate(180deg);
+    transition: all .2s ease-in-out;
 }
 
 /* Main Container */
