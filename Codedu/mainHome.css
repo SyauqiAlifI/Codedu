@@ -59,33 +59,9 @@ span.yellow-text {
 
 /* Right Section */
 #welcome-right-section {
-    position: absolute;
     float: right;
 }
 #welcome-hero-image > img {
     max-width: 364px;
     max-height: 364px;
-}
-#welcome-animated-vectors {
-    position: absolute;
-    top: 10%;
-    right: 10%;
-}
-.animated-vect:nth-child(1) > img.vector-anim {
-    position: relative;
-    top: 40%;
-    right: 120%;
-    transform: rotate(-25deg);
-    width: 76px;
-    height: 76px;
-}
-.animated-vect:nth-child(2) {
-    position: relative;
-    top: 0;
-    right: 0;
-}
-.animated-vect:nth-child(3) {
-    position: relative;
-    top: 0;
-    right: 0;
 }
