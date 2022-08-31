@@ -31,7 +31,7 @@ ul#nav-ul {
 li.main-nav-items {
     padding: 0 .8em;
     max-height: fit-content;
-    width: 76px;
+    width: 4.6em;
     text-align: right;
 }
 li.main-nav-items::after {
