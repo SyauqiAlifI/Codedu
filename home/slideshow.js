@@ -25,7 +25,7 @@ function slideShow() {
     }
 
     // Minus-ed 1 because the slide index from 0
-    slides[slideIndex - 1].style.display = "flex"
+    slides[slideIndex - 1].style.display = "block"
     slides[slideIndex - 1].className += " fade-in"
     setTimeout(() => {
         slides[slideIndex - 1].className = slides[slideIndex - 1].className.replace(" fade-in", "")

@@ -24,7 +24,13 @@
 .white-text {
     color: #fff;
 }
-span.yellow-text {
+.black-text {
+    color: #000;
+}
+.primary-text {
+    color: #112D4E;
+}
+.yellow-text {
     color: #FFC42D;
 }
 .head-1 {

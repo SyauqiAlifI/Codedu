@@ -115,19 +115,29 @@ img.mslide {
 .slide-images::before {
     content: "";
     position: absolute;
-    width: 213.5px;
+    width: 360px;
     height: 240px;
-    transform: skew(220deg) translateX(-45%);
+    transform: skew(140deg) translateX(-30%);
     z-index: 1;
     right: 50%;
-    background-color: rgba(255, 255, 255, 0.50);
+    background-image: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, .75), rgba(0, 0, 0, 0));
+    transition: all .7s ease;
+}
+.slide-images:hover::before {
+    transform: skew(140deg) translateX(15%);
+    transition: all .7s ease;
+}
+.slide-caption {
+    position: absolute;
+    margin: 12px 18px;
+    z-index: 2;
 }
 .s-dot {
     height: 10px;
     width: 10px;
     border-radius: 50%;
     margin: 0 .3em;
-    background-color: #9C9C9C;
+    background-color: #ffffff2a;
     display: inline-block;
     transition: all .3s ease-in-out;
 }
