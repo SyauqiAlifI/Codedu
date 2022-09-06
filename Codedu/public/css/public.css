@@ -1,0 +1,53 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,600,700,800);
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+/* Main Container */
+.container {
+    width: 80%;
+    height: fit-content;
+    margin: auto;
+}
+.landing-page {
+    height: 100%;
+    padding: 15% 0;
+}
+
+/* Typography */
+.white-text {
+    color: #fff;
+}
+span.yellow-text {
+    color: #FFC42D;
+}
+.head-1 {
+    font-size: 35px;
+    font-weight: 700;
+}
+.head-2 {
+    font-size: 24px;
+    font-weight: 600;
+}
+.head-3 {
+    font-size: 22.5px;
+    font-weight: 600;
+}
+.main-p {
+    font-size: 20px;
+}
+.fa-brand {
+    font-family: FontAwesomeBrands;
+}
+.fa-reg {
+    font-family: FontAwesomeRegular;
+}
+.fa-solid {
+    font-family: FontAwesomeSolid;
+}
