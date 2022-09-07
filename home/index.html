@@ -85,35 +85,43 @@
             </div>
             <!-- Carousel -->
             <div id="right-cu" class="white-text">
-                <div id="slideshow-container">
-                    <!-- Slideshow Images -->
-                    <div class="slide-images">
-                        <h1 class="slide-caption main-p">Hi Its 1</h1>
-                        <img class="mslide" src="../assets/images/PhotoBooth 1.png" alt="image-slideshow">
+                <div id="right-b" class="slide-button" onclick="nextPrevSlide(-1)">
+                    <span class="fa fa-chevron-left s-button"></span>
+                </div>
+                <div id="slideshow-cu">
+                    <div id="slideshow-container">
+                        <!-- Slideshow Images -->
+                        <div class="slide-images">
+                            <h1 class="slide-caption main-p">Hi Its 1</h1>
+                            <img class="mslide" src="../assets/images/PhotoBooth 1.png" alt="image-slideshow">
+                        </div>
+                        <div class="slide-images">
+                            <h1 class="slide-caption main-p">Hi Its 2</h1>
+                            <img class="mslide" src="../assets/images/PhotoBooth 2.png" alt="image-slideshow">
+                        </div>
+                        <div class="slide-images">
+                            <h1 class="slide-caption main-p">Hi Its 3</h1>
+                            <img class="mslide" src="../assets/images/PhotoBooth 3.png" alt="image-slideshow">
+                        </div>
+                        <div class="slide-images">
+                            <h1 class="slide-caption main-p">Hi Its 4</h1>
+                            <img class="mslide" src="../assets/images/PhotoBooth 4.png" alt="image-slideshow">
+                        </div>
+                        <div class="slide-images">
+                            <h1 class="slide-caption main-p">Hi Its 5</h1>
+                            <img class="mslide" src="../assets/images/PhotoBooth 5.png" alt="image-slideshow">
+                        </div>
                     </div>
-                    <div class="slide-images">
-                        <h1 class="slide-caption main-p">Hi Its 2</h1>
-                        <img class="mslide" src="../assets/images/PhotoBooth 2.png" alt="image-slideshow">
-                    </div>
-                    <div class="slide-images">
-                        <h1 class="slide-caption main-p">Hi Its 3</h1>
-                        <img class="mslide" src="../assets/images/PhotoBooth 3.png" alt="image-slideshow">
-                    </div>
-                    <div class="slide-images">
-                        <h1 class="slide-caption main-p">Hi Its 4</h1>
-                        <img class="mslide" src="../assets/images/PhotoBooth 4.png" alt="image-slideshow">
-                    </div>
-                    <div class="slide-images">
-                        <h1 class="slide-caption main-p">Hi Its 5</h1>
-                        <img class="mslide" src="../assets/images/PhotoBooth 5.png" alt="image-slideshow">
+                    <div id="slideshow-indicator">
+                        <span class="s-dot" onclick="currentSlide(1)"></span>
+                        <span class="s-dot" onclick="currentSlide(2)"></span>
+                        <span class="s-dot" onclick="currentSlide(3)"></span>
+                        <span class="s-dot" onclick="currentSlide(4)"></span>
+                        <span class="s-dot" onclick="currentSlide(5)"></span>
                     </div>
                 </div>
-                <div id="slideshow-indicator">
-                    <span class="s-dot"></span>
-                    <span class="s-dot"></span>
-                    <span class="s-dot"></span>
-                    <span class="s-dot"></span>
-                    <span class="s-dot"></span>
+                <div id="left-b" class="slide-button" onclick="nextPrevSlide(1)">
+                    <span class="fa fa-chevron-right s-button"></span>
                 </div>
             </div>
         </div>

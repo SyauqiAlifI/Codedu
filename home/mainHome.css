@@ -83,6 +83,9 @@ a#a-button-cu > span {
 /* Why Choose Us (Right) */
 #right-cu {
     box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 #the-show {
     display: inline-block;
@@ -139,6 +142,7 @@ img.mslide {
     margin: 0 .3em;
     background-color: #ffffff2a;
     display: inline-block;
+    cursor: pointer;
     transition: all .3s ease-in-out;
 }
 .active-dot {
@@ -146,4 +150,21 @@ img.mslide {
     width: 12px !important;
     background-color: #fff;
     transition: all .3s ease-in-out;
+}
+.slide-button {
+    background-color: rgba(0, 0, 0, 0.25);
+    padding: 2.8%;
+    margin-bottom: 4%;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.slide-button:hover {
+    background-color: rgba(0, 0, 0, .65);
+    transition: all .4s ease;
+}
+#right-b {
+    border-radius: 25% 0 0 25%;
+}
+#left-b {
+    border-radius: 0 25% 25% 0;
 }
