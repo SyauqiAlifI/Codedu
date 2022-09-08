@@ -4,7 +4,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: Montserrat, sans-serif;
     font-size: 16px;
     font-weight: 200;
 }
@@ -47,13 +47,4 @@
 }
 .main-p {
     font-size: 20px;
-}
-.fa-brand {
-    font-family: FontAwesomeBrands;
-}
-.fa-reg {
-    font-family: FontAwesomeRegular;
-}
-.fa-solid {
-    font-family: FontAwesomeSolid;
 }

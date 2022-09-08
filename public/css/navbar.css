@@ -107,6 +107,7 @@ img#profile-img {
     height: 0.4em;
     border-right: 0.2em solid black;
     border-top: 0.2em solid black;
+    border-radius: 15%;
 }
 .chev-down:hover::before {
     text-decoration: none;

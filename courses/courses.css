@@ -1,3 +1,13 @@
+#content-androidKotlin-beginner {
+    display: flex;
+    overflow-x: scroll;
+}
+.cards:first-child {
+    margin: 0 3.5% 0 0;
+}
+.cards {
+    margin: 0 3.5%;
+}
 #title-content-1 {
     font-size: 28px;
     font-weight:  700;
@@ -6,6 +16,61 @@
     margin-bottom: 60px;
 }
 #div-border-1 {
+    width: 346px;
+    height: 428px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #000000;
+    box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+}
+#logo-android {
+    margin-left: 30px;
+    margin-top: 30px;
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+    background-color: #112D4E;
+    padding: 20px;
+}
+#text-content-title {
+    margin-left: 30px;
+    margin-top: 25px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    color: #112D4E;
+}
+#text-content-type {
+    margin-left: 30px;
+    margin-top: 20px;
+    font-family: 'Montserrat';
+    font-style: light;
+    font-size: 15px;
+    margin-bottom: 90px;
+    color: #112D4E;
+}
+#button-course {
+    margin-bottom: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+    width: 266px;
+    height: 51px;
+    background: #112D4E;
+    border-radius: 20px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 88px;
+    padding-right: 88px;
+}
+
+#div-border-2 {
     width: 346px;
     height: 428px;
     background-color: white;

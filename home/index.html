@@ -8,13 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Develop your skills in CodeEducation. With top lessons">
     <link rel="icon" href="../assets/images/SquareLogo.png">
-    <!-- <link rel="stylesheet" href="navBarHome.css"> -->
     <link rel="stylesheet" href="../public/css/navbar.css">
     <link rel="stylesheet" href="../public/css/animation.css">
     <link rel="stylesheet" href="../public/css/public.css">
     <link rel="stylesheet" href="mainHome.css">
-    <link rel="stylesheet" href="responsiveHome.css">
-    <link rel="stylesheet" href="../assets/font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="../public/css/f-awesome.css">
     <title>CodEdu - Home</title>
 </head>
 
@@ -79,14 +77,14 @@
                 <p class="cu-content">
                     <a href="" id="a-button-cu" class="cu-text head-2" style="font-weight: 600;">
                         See all courses
-                        <span class="fa fa-chevron-circle-right bounce-right"></span>
+                        <span id="circle-right" class="fa bounce-right"></span>
                     </a>
                 </p>
             </div>
             <!-- Carousel -->
             <div id="right-cu" class="white-text">
                 <div id="right-b" class="slide-button" onclick="nextPrevSlide(-1)">
-                    <span class="fa fa-chevron-left s-button"></span>
+                    <span class="fa chevron-left s-button"></span>
                 </div>
                 <div id="slideshow-cu">
                     <div id="slideshow-container">
@@ -113,15 +111,15 @@
                         </div>
                     </div>
                     <div id="slideshow-indicator">
-                        <span class="s-dot" onclick="currentSlide(1)"></span>
-                        <span class="s-dot" onclick="currentSlide(2)"></span>
-                        <span class="s-dot" onclick="currentSlide(3)"></span>
-                        <span class="s-dot" onclick="currentSlide(4)"></span>
-                        <span class="s-dot" onclick="currentSlide(5)"></span>
+                        <div class="s-dot" onclick="currentSlide(1)"></div>
+                        <div class="s-dot" onclick="currentSlide(2)"></div>
+                        <div class="s-dot" onclick="currentSlide(3)"></div>
+                        <div class="s-dot" onclick="currentSlide(4)"></div>
+                        <div class="s-dot" onclick="currentSlide(5)"></div>
                     </div>
                 </div>
                 <div id="left-b" class="slide-button" onclick="nextPrevSlide(1)">
-                    <span class="fa fa-chevron-right s-button"></span>
+                    <span class="fa chevron-right s-button"></span>
                 </div>
             </div>
         </div>
@@ -129,8 +127,8 @@
         <!-- END of Contents -->
 </body>
 
-<script src="./home.js"></script>
 <script src="./slideshow.js"></script>
 <script src="../public/js/loadpage.js"></script>
+<script src="../public/js/navbar.js"></script>
 
 </html>

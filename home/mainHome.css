@@ -21,7 +21,6 @@ a {
     color: #112D4E;
 }
 .left-contents {
-    font-family: Montserrat;
     margin: .6em 0;
 }
 #welcome-left-section #welcome-title, span.yellow-text {
@@ -79,7 +78,9 @@ a#a-button-cu > span {
     margin-left: .8em;
     font-size: 18px;
 }
-
+#circle-right::before {
+    content: "\f138";
+}
 /* Why Choose Us (Right) */
 #right-cu {
     box-sizing: border-box;
@@ -140,10 +141,13 @@ img.mslide {
     width: 10px;
     border-radius: 50%;
     margin: 0 .3em;
-    background-color: #ffffff2a;
+    background-color: rgba(255, 255, 255, .25);
     display: inline-block;
     cursor: pointer;
     transition: all .3s ease-in-out;
+}
+.s-dot:hover {
+    background-color: rgba(255, 255, 255, .65);
 }
 .active-dot {
     height: 12px !important;
@@ -167,4 +171,10 @@ img.mslide {
 }
 #left-b {
     border-radius: 0 25% 25% 0;
+}
+.chevron-left::before {
+    content: "\f053";
+}
+.chevron-right::before {
+    content: "\f054";
 }
