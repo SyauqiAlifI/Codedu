@@ -121,20 +121,22 @@ img.mslide {
     position: absolute;
     width: 360px;
     height: 240px;
-    transform: skew(140deg) translateX(-30%);
+    transform: skew(220deg) translateX(-30%);
     z-index: 1;
     right: 50%;
     background-image: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, .75), rgba(0, 0, 0, 0));
     transition: all .7s ease;
 }
 .slide-images:hover::before {
-    transform: skew(140deg) translateX(15%);
+    transform: skew(220deg) translateX(15%);
     transition: all .7s ease;
 }
 .slide-caption {
     position: absolute;
-    margin: 12px 18px;
+    margin: 20px 26px;
+    bottom: 0;
     z-index: 2;
+    font-weight: 600;
 }
 .s-dot {
     height: 10px;
@@ -177,4 +179,60 @@ img.mslide {
 }
 .chevron-right::before {
     content: "\f054";
+}
+
+/* Others Content */
+#other {
+    padding: 2.5% 0;
+}
+#others-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.right-img-content {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.left-img-content {
+    display: flex;
+    flex-direction: row;
+}
+.others-content {
+    margin: 8% 0;
+    color: #112D4E;
+}
+.others-content img {
+    width: 100%;
+    vertical-align: middle;
+    object-fit: cover;
+}
+.others-img {
+    max-width: 490px;
+    max-height: 275px;
+}
+.others-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.left-img-content .others-text {
+    margin-left: 5%;
+}
+.right-img-content .others-text {
+    margin-right: 5%;
+    text-align: end;
+}
+.others-title {
+    margin-bottom: 10%;
+}
+.others-desc {
+    margin-bottom: 14%;
+}
+#get-cert > span {
+    margin-left: .8em;
+    font-size: .8em;
+}
+#white-circle-right::before {
+    content: "\f138";
 }
