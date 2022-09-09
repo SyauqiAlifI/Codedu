@@ -1,4 +1,4 @@
- /* content 1 */
+/* content 1 */
 #content-androidKotlin-beginner {
     display: flex;
     overflow-x: scroll;
@@ -39,7 +39,7 @@
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
-    font-size: 25px;
+    font-size: 20px;
     color: #112D4E;
 }
 #text-content-type {
@@ -55,7 +55,7 @@
     margin-bottom: 30px;
     margin-left: 40px;
     margin-right: 40px;
-    width: 266px;
+    width: 261px;
     height: 51px;
     background: #112D4E;
     border-radius: 20px;
