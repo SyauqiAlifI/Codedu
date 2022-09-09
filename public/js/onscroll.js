@@ -10,7 +10,7 @@ function fixnav() {
 }
 function showFooter() {
     let footer = document.getElementById('our-footer')
-    if (document.documentElement.scrollTop > 1300) {
+    if (document.documentElement.scrollTop > 1280) {
         footer.className = " active-foot"
     } else {
         footer.className = ""

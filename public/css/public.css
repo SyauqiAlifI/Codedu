@@ -25,6 +25,9 @@
     height: 100%;
     padding: 15% 0;
 }
+.pub-landing {
+    padding: 8% 0;
+}
 
 /* Typography */
 .white-text {
@@ -58,10 +61,20 @@
 .footer-size {
     font-size: 16px;
 }
+.filter-text {
+    font-size: 10px;
+}
 
 /* Footer */
+#our-footer {
+    transition: all .4s ease;
+    display: none; 
+    transform: translateY(-50%);
+}
 .active-foot {
-    animation-name: slide-up;
+    display: block !important;
+    transform: translateY(0) !important;
+    transition: all .4s ease;
 }
 .main-footer {
     background-color: #112D4E;

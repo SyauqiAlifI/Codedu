@@ -33,3 +33,6 @@
 .fa-instagram::before {
   content: "\f16d";
 }
+.fa-search::before {
+  content: "\f002";
+}
