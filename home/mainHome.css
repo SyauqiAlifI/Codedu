@@ -23,7 +23,7 @@ a {
 .left-contents {
     margin: .6em 0;
 }
-#welcome-left-section #welcome-title, span.yellow-text {
+#welcome-left-section #welcome-title, #welcome-left-section #welcome-title > span.yellow-text {
     font-weight: 700;
     font-size: 47px;
 }
@@ -49,9 +49,14 @@ a {
 #welcome-right-section {
     float: right;
 }
-#welcome-hero-image > img {
+#welcome-hero-image {
     max-width: 364px;
     max-height: 364px;
+}
+#welcome-hero-image > img {
+    width: 100%;
+    vertical-align: middle;
+    object-fit: cover;
 }
 
 /* Why Choose Us */
@@ -105,13 +110,12 @@ a#a-button-cu > span {
     display: none;
     overflow: hidden;
     position: relative;
+    max-height: 281px;
+    max-width: 500px;
     border-radius: 16px;
 }
 img.mslide {
-    max-width: 427px;
-    min-width: 427px;
-    max-height: 240px;
-    min-height: 240px;
+    width: 100%;
     border-radius: 16px;
     object-fit: cover;
     vertical-align: middle;
@@ -119,8 +123,8 @@ img.mslide {
 .slide-images::before {
     content: "";
     position: absolute;
-    width: 360px;
-    height: 240px;
+    height: 100%;
+    width: 100%;
     transform: skew(220deg) translateX(-30%);
     z-index: 1;
     right: 50%;

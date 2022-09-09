@@ -38,6 +38,7 @@
 }
 .yellow-text {
     color: #FFC42D;
+    font-size: inherit;
 }
 .head-1 {
     font-size: 35px;
@@ -53,4 +54,56 @@
 }
 .main-p {
     font-size: 20px;
+}
+.footer-size {
+    font-size: 16px;
+}
+
+/* Footer */
+.main-footer {
+    background-color: #112D4E;
+    padding: 3% 0;
+}
+/* Head Footer */
+.head-footer {
+    margin-bottom: 4%;
+}
+.head-footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-logo {
+    height: 3rem;
+    margin-bottom: 2%;
+}
+.footer-logo > img {
+    height: 100%;
+}
+.footer-desc {
+    display: flex;
+}
+.footer-desc > p {
+    text-align: center;
+}
+/* Bottom Footer */
+.bottom-footer {
+    margin-top: 4%;
+}
+.bottom-footer-content {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+    align-content: center;
+}
+.kopirek, .made-with, .sosmed {
+    display: flex;
+}
+.made-with {
+    margin-right: 15%;
+}
+.sosmed {
+    width: 4rem;
+    justify-content: space-between;
 }
