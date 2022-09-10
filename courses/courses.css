@@ -1,29 +1,49 @@
 /* Filter box */
 #filter-box {
-    box-sizing: border-box;
+    display: block;
+    align-items: center;
 }
+/* Search */
 #search-box {
     display: inline-block;
+    width: 130px;
 }
-.no-border {
+form#search-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+form#search-form input[type="text"] {
+    margin: 0;
+    padding: .6rem;
+    font-size: inherit;
+    font-weight: inherit;
+    border-radius: 10px;
+    float: left;
+    background-color: #EFEFEF;
+    background-image: url(../assets/vectors/search.svg);
+    background-repeat: no-repeat;
+    background-position: 90% 50%;
+    background-size: 9px;
+    color: #808080;
+    border: none;
+    outline: none;
+}
+form#search-form input[type="text"]:focus {
     border: none;
 }
-#search {
-    min-width: fit-content;
-    align-items: center;
-    position: relative;
-}
-#box-input {
+
+/* All filters */
+#courses-box-type {
     display: inline-block;
+    margin: 0 1%;
 }
-#search-input {
-    margin: 0;
-    padding: 5%;
+.type-card {
+    background-color: #F1F1F1;
+    padding: 6px 10px;
+    border-radius: 10px;
 }
-#search-button {
-    position: absolute;
-    background-color: none;
-    width: fit-content;
-    text-align: center;
-    display: inline-block;
+.active-type {
+    color: #112D4E;
 }
